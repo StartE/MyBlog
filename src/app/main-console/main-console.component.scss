@@ -1,0 +1,22 @@
+.title-bar{
+    width: 100%;
+}
+
+.side-bar{
+    width:200px;
+    float: left;
+}
+.content{
+    max-width:760px;
+    width: 100%;//div float right,but content float left
+    float: right;
+}
+.foot-bar{
+    width: 100%;
+}
+section.wrap{
+    max-width: 960px;
+    min-height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
