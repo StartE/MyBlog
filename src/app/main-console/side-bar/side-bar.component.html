@@ -1,7 +1,7 @@
 <nav>
     <ul class="items">
-        <li *ngFor = "let item of items;let idx = index" (click)="onSelect(item)" [class.selected]="item === selectedItem">
-            <span class="item"  *ngIf ="!!item.link" [routerLink] = "[item.link]" routerLinkActive ="active">{{item.label}}</span>
+        <li *ngFor = "let item of items;let idx = index" class="item" (click)="onSelect(item)" [class.selected]="item === selectedItem">
+            <span class = "nav-item" *ngIf ="!!item.link" [routerLink] = "[item.link]" routerLinkActive ="active">{{item.label}}</span>
         </li>
     </ul>
 </nav>

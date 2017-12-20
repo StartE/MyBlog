@@ -13,6 +13,8 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateLoader,TranslateModule  } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';//for bootstrap style
+
 import { DataTableModule,InputTextModule, ButtonModule } from 'primeng/primeng';
 import { CalendarModule } from 'primeng/primeng';
 
@@ -55,6 +57,9 @@ export function createTranslateHttpLoader(http: HttpClient){
 
     /** translation */
     HttpClientModule,
+
+    /** bootstrap */
+    NgbModule,
 
     TranslateModule.forRoot({
         loader:{
