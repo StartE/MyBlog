@@ -12,8 +12,8 @@ export const MainConsoleRouting = RouterModule.forChild([
         children:[
             { path: "", redirectTo: "dashboard", pathMatch: 'full' },
             { path: "dashboard", component: DashboardComponent},
-            { path: "image", component: ImageComponent},
-            { path: "book", component:BookComponent},
+            { path: "top-1", component: ImageComponent},
+            { path: "top-2", component:BookComponent},
             { path: "other", component: OtherComponent},
         ]
     }

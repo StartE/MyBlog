@@ -16,11 +16,11 @@ export class SideBarComponent implements OnInit {
             link: "dashboard",
         },
         {   label: "sidebar_image",
-            link: "image",
+            link: "top-1",
         },
         {
             label:"sidebar_book",
-            link:"book",
+            link:"top-2",
         },
         {   label: "sidebar_other",
             link: "other",

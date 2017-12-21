@@ -26,11 +26,13 @@ import { ImageComponent } from './image/image.component';
 import { TitleBarComponent } from './title-bar/title-bar.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 
-import { MainConsoleRouting } from './main-console.routing';
-import { MainConsoleComponent } from './main-console.component';
 import { FootBarComponent } from './foot-bar/foot-bar.component';
 import { BookComponent } from './book/book.component';
+import { BooklistComponent } from './book/booklist/booklist.component';
+import { BookContentComponent } from './book/book-content/book-content.component';
 
+import { MainConsoleRouting } from './main-console.routing';
+import { MainConsoleComponent } from './main-console.component';
 /** Service */
 import { DotaService } from './../services/dota.service';
 
@@ -77,7 +79,9 @@ export function createTranslateHttpLoader(http: HttpClient){
     TitleBarComponent,
     SideBarComponent,
     FootBarComponent,
-    BookComponent
+    BookComponent,
+    BooklistComponent,
+    BookContentComponent
     ],
   providers:[
       DotaService,
