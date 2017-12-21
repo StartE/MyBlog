@@ -5,8 +5,10 @@
     </div>
     <div class="main" [ngClass]="{'showS':showSideBar,'hideS':!showSideBar}">
         <app-title-bar class="d-flex flex-row"></app-title-bar>
-        <div class="d-flex flex-row main-content">
-            <router-outlet></router-outlet>
+        <div class="d-flex flex-row">
+            <div class="main-content">
+                <router-outlet></router-outlet>
+            </div>
         </div>
         <app-foot-bar class="d-flex flex-row footBar"></app-foot-bar>
     </div>
