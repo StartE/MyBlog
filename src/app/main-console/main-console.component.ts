@@ -21,7 +21,6 @@ export class MainConsoleComponent implements OnInit {
 
     onClickToggle(){
         this.showSideBar = !this.showSideBar;
-        console.log(this.showSideBar)
     }
 
 }
