@@ -8,6 +8,8 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class MainConsoleComponent implements OnInit {
 
+    showSideBar:boolean = true;
+
     constructor(private translateService:TranslateService){
     }
     ngOnInit(){
@@ -15,6 +17,10 @@ export class MainConsoleComponent implements OnInit {
         this.translateService.setDefaultLang('zh');
         const browserLan = this.translateService.getBrowserLang();
         this.translateService.use(browserLan.match(/en|zh/)? browserLan:'en');
+    }
+
+    onClickToggle(){
+        this.showSideBar = !this.showSideBar;
     }
 
 }

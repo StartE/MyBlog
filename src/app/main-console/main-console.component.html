@@ -1,14 +1,23 @@
-<div class="title-bar">
-    <app-title-bar></app-title-bar>
-</div>
-<section class="wrap">
-    <div class="side-bar"> 
+
+<div>
+    <div class="side-bar" *ngIf="showSideBar">
         <app-side-bar></app-side-bar>
     </div>
-    <div class="content">
-        <router-outlet></router-outlet>
+    <div class="main" [ngClass]="{'showS':showSideBar,'hideS':!showSideBar}">
+        <app-title-bar class="d-flex flex-row"></app-title-bar>
+        <div class="d-flex flex-row main-content">
+            <router-outlet></router-outlet>
+        </div>
+        <app-foot-bar class="d-flex flex-row footBar"></app-foot-bar>
     </div>
-</section>
-<div class="foot-bar">
-    <app-foot-bar></app-foot-bar>
+
 </div>
+
+<div class="sidebar-toggle" (click)="onClickToggle()">
+    <div class="toggle">
+        <span *ngIf ="!showSideBar" ><i class=" fa fa-fast-forward"></i></span>
+        <span *ngIf ="showSideBar"><i class=" fa fa-fast-backward"></i></span>
+    </div>
+</div>
+
+

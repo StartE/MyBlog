@@ -1,22 +1,50 @@
-.title-bar{
-    width: 100%;
-}
+@import "./../../variable.scss";
 
 .side-bar{
-    width:200px;
-    float: left;
+    width: 15%;
+    position: fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    box-shadow: inset 0 2px 6px $black2;
+    background: $black;
 }
-.content{
-    max-width:760px;
-    width: 100%;//div float right,but content float left
-    float: right;
+
+.sidebar-toggle{
+    position: fixed;
+    left: 35px;
+    bottom: 35px;
+    line-height: 0;
+    z-index: 1040;
+    cursor: pointer;
 }
-.foot-bar{
+.toggle{
+    font-size: 16px;
+    color: $blue;
+    background: $black1;
+    padding: 5px 5px;
+}
+
+.main{
+    position: absolute;
+    background:white;
+    color: $grey;
+    font-size: 14px;
+    min-height: 100%;
+}
+.showS{
+    width: 85%;
+    left: 15%;
+}
+.hideS{
     width: 100%;
 }
-section.wrap{
-    max-width: 960px;
-    min-height: 800px;
-    margin-left: auto;
-    margin-right: auto;
+.footBar{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.main-content{
+    width: 100%;
+    background: green;
 }
