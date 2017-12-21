@@ -1,5 +1,7 @@
 /* Master Styles */
+$fa-font-path: "~font-awesome/fonts/";
 
+@import "~font-awesome/scss/font-awesome";
 @import "~bootstrap/scss/bootstrap";
 
 h1 {
@@ -46,7 +48,11 @@ button:disabled {
 .right-item{
     float: right;
 }
-
+.content-wrap{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* everywhere else */
 * {
