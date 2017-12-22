@@ -22,6 +22,8 @@ import { CalendarModule } from 'primeng/primeng';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { OtherComponent } from './other/other.component';
 import { ImageComponent } from './image/image.component';
+import { OtherSub1Component } from './other/other-sub1/other-sub1.component';
+import { OtherSub2Component } from './other/other-sub2/other-sub2.component';
 
 import { TitleBarComponent } from './title-bar/title-bar.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
@@ -35,6 +37,7 @@ import { MainConsoleRouting } from './main-console.routing';
 import { MainConsoleComponent } from './main-console.component';
 /** Service */
 import { DotaService } from './../services/dota.service';
+import { OtherHomeComponent } from './other/other-home/other-home.component';
 
 export function createTranslateHttpLoader(http: HttpClient){
     return new TranslateHttpLoader(http,'./assets/i18n/','.json');
@@ -81,7 +84,10 @@ export function createTranslateHttpLoader(http: HttpClient){
     FootBarComponent,
     BookComponent,
     BooklistComponent,
-    BookContentComponent
+    BookContentComponent,
+    OtherSub1Component,
+    OtherSub2Component,
+    OtherHomeComponent
     ],
   providers:[
       DotaService,

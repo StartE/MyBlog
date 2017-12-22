@@ -18,7 +18,7 @@ ul li{
     line-height: 1.8em;
     color: $grey2;
 }
-.items li.selected{
+div.selected{
     color: $blue1;
 }
 .items li:hover {
@@ -28,4 +28,7 @@ ul li{
 .nav-item{
     display: inline-block;
     outline: none;
+}
+span:hover{
+    color: white;
 }
