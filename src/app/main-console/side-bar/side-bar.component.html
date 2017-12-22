@@ -1,10 +1,10 @@
-
 <nav>
     <div >
         <div *ngFor = "let item of items;let idx = index">
             <div [class.selected]="item === selectedItem" (click)="onSelect(item)">
                 <span class = "nav-item" *ngIf ="!!item.link" [routerLink] = "[item.link]" routerLinkActive ="active">{{item.label}}</span>
             </div>
+            
             <div>
                 <div [class.selected]="subItem === selectedSubItem" *ngFor = "let subItem of item.subItems;" (click)="onSubSelect(item,subItem)" >
                     <span class = "nav-item" *ngIf ="!!subItem.link" [routerLink] = "[subItem.link]" routerLinkActive ="active">{{subItem.label}}</span>
