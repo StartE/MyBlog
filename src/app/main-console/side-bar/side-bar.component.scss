@@ -21,14 +21,13 @@ ul li{
 div.selected{
     color: $blue1;
 }
-.items li:hover {
-    color: white;
-    cursor: pointer;
-}
 .nav-item{
     display: inline-block;
     outline: none;
 }
 span:hover{
     color: white;
+}
+.sub-item{
+    padding-left: 30px;
 }
