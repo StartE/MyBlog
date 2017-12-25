@@ -53,8 +53,8 @@ export class SideBarComponent implements OnInit {
         this.selectedItem = item;
         this.selectedSubItem = null;
     }
-    onSubSelect(subItem:SubItem){
+    onSubSelect(item:NavItem,subItem:SubItem){
         this.selectedSubItem = subItem;
-        this.selectedItem = null;
+        this.selectedItem = item;
     }
 }
