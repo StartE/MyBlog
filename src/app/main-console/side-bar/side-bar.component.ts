@@ -34,6 +34,7 @@ export class SideBarComponent implements OnInit {
         },
         {   label: "sidebar_other",
             link: "other",
+            expand: false,
             subItems: this.otherSubItem
         }
     ];
@@ -52,6 +53,7 @@ export class SideBarComponent implements OnInit {
     onSelect(item:NavItem){
         this.selectedItem = item;
         this.selectedSubItem = null;
+        this.selectedItem.expand = !this.selectedItem.expand;
     }
     onSubSelect(item:NavItem,subItem:SubItem){
         this.selectedSubItem = subItem;
