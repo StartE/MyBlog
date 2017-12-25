@@ -1,13 +1,13 @@
 <nav>
     <div >
         <div *ngFor = "let item of items;let idx = index">
-            <div [class.selected]="item === selectedItem" class="item"  (click)="onSelect(item)">
-                <span class = "nav-item" *ngIf ="!!item.link" [routerLink] = "[item.link]" routerLinkActive ="active">{{item.label}}</span>
+            <div [class.selected]="item === selectedItem" class="item" [routerLink] = "[item.link]" routerLinkActive ="active" (click)="onSelect(item)">
+                <span class = "nav-item" *ngIf ="!!item.link" >{{item.label}}</span>
                 <span class="right-item" *ngIf ="!(item.expand && item.subItems)"><i class="fa fa-chevron-right"></i></span>
                 <span class="right-item" *ngIf ="item.expand && item.subItems" ><i class="fa fa-chevron-down"></i></span>
             </div>            
-            <div *ngIf ="item.expand">
-                <div *ngFor = "let subItem of item.subItems;" class = "sub-item" [class.selected]="subItem === selectedSubItem"  (click)="onSubSelect(item,subItem)" >
+            <div *ngIf ="item.expand" >
+                <div *ngFor = "let subItem of item.subItems;" class = "sub-item" [class.selected]="subItem === selectedSubItem" [routerLink] = "[subItem.link]" routerLinkActive ="active" (click)="onSubSelect(item,subItem)" >
                     <span class = "nav-item" *ngIf ="!!subItem.link" [routerLink] = "[subItem.link]" routerLinkActive ="active">{{subItem.label}}</span>
                 </div>
             </div>
