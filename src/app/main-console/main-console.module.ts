@@ -18,6 +18,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';//for bootstrap style
 import { DataTableModule,InputTextModule, ButtonModule } from 'primeng/primeng';
 import { CalendarModule } from 'primeng/primeng';
 
+/** Service */
+import { DotaService } from './../services/dota.service';
+
 /** Component */
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { OtherComponent } from './other/other.component';
@@ -35,9 +38,10 @@ import { BookContentComponent } from './book/book-content/book-content.component
 
 import { MainConsoleRouting } from './main-console.routing';
 import { MainConsoleComponent } from './main-console.component';
-/** Service */
-import { DotaService } from './../services/dota.service';
+
 import { OtherHomeComponent } from './other/other-home/other-home.component';
+import { CommonComponent } from './common/common.component';
+import { AbstractComponent } from './common/abstract/abstract.component';
 
 export function createTranslateHttpLoader(http: HttpClient){
     return new TranslateHttpLoader(http,'./assets/i18n/','.json');
@@ -87,7 +91,9 @@ export function createTranslateHttpLoader(http: HttpClient){
     BookContentComponent,
     OtherSub1Component,
     OtherSub2Component,
-    OtherHomeComponent
+    OtherHomeComponent,
+    CommonComponent,
+    AbstractComponent
     ],
   providers:[
       DotaService,
