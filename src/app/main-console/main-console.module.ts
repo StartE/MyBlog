@@ -42,6 +42,7 @@ import { MainConsoleComponent } from './main-console.component';
 import { OtherHomeComponent } from './other/other-home/other-home.component';
 import { CommonComponent } from './common/common.component';
 import { AbstractComponent } from './common/abstract/abstract.component';
+import { MarkdownComponent } from './common/markdown/markdown.component';
 
 export function createTranslateHttpLoader(http: HttpClient){
     return new TranslateHttpLoader(http,'./assets/i18n/','.json');
@@ -93,7 +94,8 @@ export function createTranslateHttpLoader(http: HttpClient){
     OtherSub2Component,
     OtherHomeComponent,
     CommonComponent,
-    AbstractComponent
+    AbstractComponent,
+    MarkdownComponent
     ],
   providers:[
       DotaService,

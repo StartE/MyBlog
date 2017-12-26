@@ -34,6 +34,7 @@
     "bootstrap": "4.0.0-alpha.6",
     "core-js": "^2.4.1",
     "font-awesome": "^4.7.0",
+    "marked": "^0.3.9",
     "primeng": "^4.1.0",
     "rxjs": "^5.1.0",
     "web-animations-js": "^2.3.1",

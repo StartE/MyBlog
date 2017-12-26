@@ -1,3 +1,49 @@
 <div class="content-wrap">
-    <app-abstract [articleTitle]="articleTitle" [content] ="content" [words]="20" ></app-abstract>
+    <article>
+        <h3>Abstract Example</h3>
+        <app-abstract [articleTitle]="articleTitle" [content] ="content" [words]="20" ></app-abstract>
+    </article>
+    <article>
+        <h3>Markdown Example</h3>
+        <code># H1</code>
+        <markdown># H1</markdown>
+        <code>## h2h2</code>
+        <markdown> ## h2h2</markdown>
+        <div>
+            <code> * a</code><br>
+            <code>* b</code><br>
+            <code>* c</code><br>
+        </div>
+        <markdown>
+            * a
+            * b
+            * c
+        </markdown>
+        <code>***</code>
+        <markdown>
+            ***
+        </markdown>
+        <code>[I'm an inline-style link](https://www.google.com)</code>
+        <markdown>
+            [I'm an inline-style link](https://www.google.com)
+        </markdown>
+        <div>
+            | Tables        | Are           | Cool  |<br>
+            | ------------- |:-------------:| -----:|<br>
+            | col 3 is      | right-aligned | $1600 |<br>
+            | col 2 is      | centered      |   $12 |<br>
+            | zebra stripes | are neat      |    $1 |<br>
+        </div>
+        <markdown>
+            | Tables        | Are           | Cool  |
+            | ------------- |:-------------:| -----:|
+            | col 3 is      | right-aligned | $1600 |
+            | col 2 is      | centered      |   $12 |
+            | zebra stripes | are neat      |    $1 |
+        </markdown>
+        <code>Use the `printf()` function.</code>
+        <markdown>
+        Use the `printf()` function.
+        </markdown>
+    </article>
 </div>
