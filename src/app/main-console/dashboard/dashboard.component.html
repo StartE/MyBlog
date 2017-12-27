@@ -9,11 +9,11 @@
         <markdown># H1</markdown>
         <code>## h2h2</code>
         <markdown> ## h2h2</markdown>
-        <div>
-            <code> * a</code><br>
-            <code>* b</code><br>
-            <code>* c</code><br>
-        </div>
+        <pre>
+        * a
+        * b
+        * c
+        </pre>
         <markdown>
             * a
             * b
@@ -27,13 +27,14 @@
         <markdown>
             [I'm an inline-style link](https://www.google.com)
         </markdown>
-        <div>
-            | Tables        | Are           | Cool  |<br>
-            | ------------- |:-------------:| -----:|<br>
-            | col 3 is      | right-aligned | $1600 |<br>
-            | col 2 is      | centered      |   $12 |<br>
-            | zebra stripes | are neat      |    $1 |<br>
-        </div>
+        <pre><code>
+            | Tables        | Are           | Cool  |
+            | ------------- |:-------------:| -----:|
+            | col 3 is      | right-aligned | $1600 |
+            | col 2 is      | centered      |   $12 |
+            | zebra stripes | are neat      |    $1 |
+        </code>
+        </pre>
         <markdown>
             | Tables        | Are           | Cool  |
             | ------------- |:-------------:| -----:|
@@ -45,5 +46,32 @@
         <markdown>
         Use the `printf()` function.
         </markdown>
+        <markdown>
+            ```typescript
+             const myProp: string = 'value';
+            ```
+        </markdown>
     </article>
 </div>
+<pre  class="language-typescript">
+    <code class="language-typescript">
+        const myProp: string = 'value';
+    </code>
+</pre>
+
+
+
+<pre  class="language-python">
+    <code class="language-python">
+        import threading
+        from concurrent import futures
+        import time
+        import csv
+        try:
+            from functools import namedtuple
+        except ImportError:
+            from collections import namedtuple
+        header = ["aid", "view", "danmaku", "reply", "favorite", "coin", "share"]
+        Video = namedtuple('Video', header)
+    </code>
+</pre>

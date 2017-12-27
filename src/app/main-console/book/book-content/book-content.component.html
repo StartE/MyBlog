@@ -1,5 +1,75 @@
-<div class="main">
-  <p>
-    book-content works!---------------------------
-  </p>  
-</div>
+<article>
+    <section>
+        <h4>1.Using markdown component directly</h4>
+        <hr>
+        <code class="showHtml">&lt;markdown# test of markdown ## level2> &lt;/markdown></code>
+        <markdown>
+            # test of markdown
+            ## level2
+        </markdown>
+        <hr>
+        <code class="showHtml">&lt;markdown[I'm an inline-style link](https://www.google.com)>&lt;/markdown></code>
+        <markdown>
+            [I'm an inline-style link](https://www.google.com)
+        </markdown>
+        <hr>
+        <pre>
+      <code class="showHtml">
+            &lt;markdown>
+            | Tables        | Are           | Cool  |
+            | ------------- |:-------------:| -----:|
+            | col 3 is      | right-aligned | $1600 |
+            | col 2 is      | centered      |   $12 |
+            | zebra stripes | are neat      |    $1 |
+            &lt;/markdown>
+            </code></pre>
+        <markdown>
+            | Tables        | Are           | Cool  |
+            | ------------- |:-------------:| -----:|
+            | col 3 is      | right-aligned | $1600 |
+            | col 2 is      | centered      |   $12 |
+            | zebra stripes | are neat      |    $1 |
+        </markdown>
+        <hr>
+        <pre><code class="showHtml">
+            &lt;markdown>
+            ```typescript
+            const myProp: string = 'value';
+            ```
+                        &lt;/markdown>
+            </code></pre>
+        <markdown>
+            ```typescript
+            const myProp: string = 'value';
+            ```
+        </markdown>
+    </section>
+    <section>
+        <h4>2.Using markdown component by data</h4>
+        <code class="showHtml">&lt;markdown [data]="'# h1 \n## h2'">&lt;/markdown></code>
+        <markdown [data]="'# h1 \n## h2'"></markdown>
+    </section>
+    <section>
+        <h4>3.Using markdown component by src</h4>
+        <code class="showHtml">&lt; markdown [src]="'./assets/file/test.py'">&lt;/markdown></code>
+        <markdown [src]="'./assets/file/test.py'"></markdown>
+    </section>
+    <section>
+        <h4>4.Using markdown directive directly</h4>
+        <code class="showHtml">&lt;div markdown># test of markdown ## level2&lt;/div></code>
+        <div markdown>
+            # test of markdown
+            ## level2
+        </div>
+    </section>
+    <section>
+        <h4>5.Using markdown directive by data</h4>
+        <code class="showHtml">&lt;div [data]="'# h1 \n## h2'">&lt;/div></code>
+        <div markdown [data]="'# h1 \n## h2'"></div>
+    </section>
+    <section>
+        <h4>6.Using markdown directive by src</h4>
+        <code class="showHtml">&lt; div markdown [src]="'./assets/file/test.md'"&gt; &lt; /div &gt;</code>
+        <div markdown [src]="'./assets/file/test.md'"></div>
+    </section>
+</article>

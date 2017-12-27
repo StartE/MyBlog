@@ -20,6 +20,7 @@ import { CalendarModule } from 'primeng/primeng';
 
 /** Service */
 import { DotaService } from './../services/dota.service';
+import { MarkdownService } from './common/markdown/markdown.service';
 
 /** Component */
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -99,6 +100,7 @@ export function createTranslateHttpLoader(http: HttpClient){
     ],
   providers:[
       DotaService,
+      MarkdownService
   ]
 })
 export class MainConsoleModule { }
