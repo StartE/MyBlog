@@ -1,7 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'mkd-language',
+  name: 'language',
 })
 export class LanguagePipe implements PipeTransform {
 

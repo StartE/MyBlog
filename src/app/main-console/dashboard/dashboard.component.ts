@@ -7,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  articleTitle:string = "Test Abstract"
-  content:string = "kkkkkkkkkkkkkkksxmsdsmdddddwueeeeeeeeeeen edwenwedwjjnasdjnnnnnnnnnnnnjsssssssssssssssklsalsmalmllllllllllll"
   constructor() { }
 
   ngOnInit() {

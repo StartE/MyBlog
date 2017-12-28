@@ -13,29 +13,52 @@ export class SideBarComponent implements OnInit {
     selectedItem: NavItem;
     selectedSubItem: SubItem;
     showSub: boolean = false;
-    otherSubItem: Array<SubItem> =[
-        {   label: "sub1",
-            link: "other/sub1",
+    subItem1: Array<SubItem> =[
+        {   label: "Style & Layout",
+            link: "top-1/sub1",
         },
-        {   label: "sub2",
-            link: "other/sub2",
+        {   label: "Script",
+            link: "top-1/sub2",
+        }, 
+    ];
+    subItem2: Array<SubItem> =[
+        {   label: "Analysis",
+            link: "top-2/sub1",
+        },
+        {   label: "Maching Learning",
+            link: "top-2/sub2",
+        }, 
+        {   label: "Visulation",
+            link: "top-2/sub2",
+        },
+    ];
+    subItem3: Array<SubItem> =[
+        {   label: "Tools",
+            link: "top-3/sub1",
+        },
+        {   label: "Rescource",
+            link: "top-3/sub2",
         }, 
     ];
     items: Array<NavItem> =[
-        {   label: "sidebar_dashboard",
+        {   label: "Dashboard",
             link: "dashboard",
         },
-        {   label: "sidebar_image",
+        {   label: "Web Development",
             link: "top-1",
+            expand: false,
+            subItems: this.subItem1
         },
         {
-            label:"sidebar_book",
+            label:"Data Science",
             link:"top-2",
-        },
-        {   label: "sidebar_other",
-            link: "other",
             expand: false,
-            subItems: this.otherSubItem
+            subItems: this.subItem2
+        },
+        {   label: "Tools & Resource",
+            link: "top-3",
+            expand: false,
+            subItems: this.subItem3
         }
     ];
 

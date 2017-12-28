@@ -73,11 +73,15 @@ section{
     margin-right: auto;
 }
 .showHtml{
-    color: $red1;
+    color: $red2;
     font-size: 1rem;
+}
+.hint-row{
+    margin: 1rem 0;
 }
 .hint-icon{
     color: yellowgreen;
+    margin-right:0.5rem;
 }
 /* everywhere else */
 * {

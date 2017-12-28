@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BookContentComponent implements OnInit {
 
-  constructor() { }
 
-  ngOnInit() {
-  }
+    constructor() { }
+
+    ngOnInit() {
+    }
+    markdowntext = "const myProp: string = 'value';";
 
 }
