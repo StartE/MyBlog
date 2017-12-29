@@ -1,0 +1,12 @@
+<div class="item">
+  <div class="row no-gutters" [routerLink] = "['/Blog/articles',article.path | json, article.subPath | json,article.id]">
+    <div class="item-title">
+        <span>{{article.name}}</span>
+    </div>
+  </div>
+  <div class="row no-gutters">
+    <div class="item-path">
+        <span>{{article.path}}->{{article.subPath}}</span>
+    </div>
+  </div>
+</div>

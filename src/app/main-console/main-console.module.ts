@@ -17,7 +17,7 @@ import { PipeModule } from './../pipes/pipe.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';//for bootstrap style
 
 import { DataTableModule,InputTextModule, ButtonModule } from 'primeng/primeng';
-import { CalendarModule } from 'primeng/primeng';
+import { CalendarModule,PaginatorModule  } from 'primeng/primeng';
 
 /** Service */
 import { DotaService } from './../services/dota.service';
@@ -27,7 +27,6 @@ import { MarkdownService } from './common/markdown/markdown.service';
 
 import { TitleBarComponent } from './title-bar/title-bar.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
-import { FootBarComponent } from './foot-bar/foot-bar.component';
 
 import { MainConsoleRouting } from './main-console.routing';
 import { MainConsoleComponent } from './main-console.component';
@@ -50,6 +49,8 @@ import { Top3Sub1Component } from './content/top-3/top3-sub1/top3-sub1.component
 import { Top3Sub2Component } from './content/top-3/top3-sub2/top3-sub2.component';
 import { Top3HomeComponent } from './content/top-3/top3-home/top3-home.component';
 import { ArticlesComponent } from './articles/articles.component';
+import { ArticleItemComponent } from './common/article-item/article-item.component';
+import { ArticleListComponent } from './common/article-list/article-list.component';
 
 export function createTranslateHttpLoader(http: HttpClient){
     return new TranslateHttpLoader(http,'./assets/i18n/','.json');
@@ -68,6 +69,7 @@ export function createTranslateHttpLoader(http: HttpClient){
     CalendarModule,
     InputTextModule,
     ButtonModule,
+    PaginatorModule,
 
     /** routing */
     MainConsoleRouting,
@@ -93,7 +95,6 @@ export function createTranslateHttpLoader(http: HttpClient){
     MainConsoleComponent,
     TitleBarComponent,
     SideBarComponent,
-    FootBarComponent,
     CommonComponent,
     AbstractComponent,
     MarkdownComponent,
@@ -111,7 +112,9 @@ export function createTranslateHttpLoader(http: HttpClient){
     Top1Component,
     Top2Component,
     Top3Component,
-    ArticlesComponent
+    ArticlesComponent,
+    ArticleItemComponent,
+    ArticleListComponent
     ],
   providers:[
       DotaService,

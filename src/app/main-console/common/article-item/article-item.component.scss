@@ -1,0 +1,18 @@
+@import "./../../../../variable.scss";
+
+.item{
+    border:1px dotted $grey1;
+    border-top-left-radius: 0.5rem;
+    margin: 0.5rem 0.5rem;
+    padding: 0.5rem 0.5rem;
+}
+.item-title{
+    color: $blue;
+    font-size: 20px;
+    padding: 0 0 0.5rem 0;
+    cursor: pointer;
+}
+.item-path{
+    color: $grey2;
+    font-size: 12px;
+}
