@@ -1,0 +1,7 @@
+<div class="row no-gutters">
+    <div class="">
+        <div *ngFor = "let item of articleList;let idx = index" [routerLink] = "['/Blog/articles',item.path | json,item.subPath | json,item.id]">
+            <span>{{item.name}}</span>
+        </div>
+    </div>
+</div>

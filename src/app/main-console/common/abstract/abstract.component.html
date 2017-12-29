@@ -1,11 +1,11 @@
 <div>
   <div class="row no-gutters">
-    <span>{{articleTitle}}</span>
+    <span><b>{{articleTitle}}</b></span>
   </div>
   <div class="row no-gutters">
-    {{cutString}}
+    <p>{{cutString}}</p>
   </div>
   <div class="row no-gutters">
-    <span (click)="toggleBtn()" >{{hint}}</span>
+    <button (click)="toggleBtn()"><span >{{hint}}</span></button>
   </div>
 </div>

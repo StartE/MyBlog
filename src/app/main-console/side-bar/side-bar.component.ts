@@ -13,29 +13,52 @@ export class SideBarComponent implements OnInit {
     selectedItem: NavItem;
     selectedSubItem: SubItem;
     showSub: boolean = false;
-    otherSubItem: Array<SubItem> =[
-        {   label: "sub1",
-            link: "other/sub1",
+    subItem1: Array<SubItem> =[
+        {   label: "Style & Layout",
+            link: "web-dev/layout-style",
         },
-        {   label: "sub2",
-            link: "other/sub2",
+        {   label: "Script",
+            link: "web-dev/script",
+        }, 
+    ];
+    subItem2: Array<SubItem> =[
+        {   label: "Analysis",
+            link: "data-science/analysis",
+        },
+        {   label: "Maching Learning",
+            link: "data-science/machine-learning",
+        }, 
+        {   label: "Visulation",
+            link: "data-science/visualization",
+        },
+    ];
+    subItem3: Array<SubItem> =[
+        {   label: "Tools",
+            link: "tools-resources/tools",
+        },
+        {   label: "Rescource",
+            link: "tools-resources/resources",
         }, 
     ];
     items: Array<NavItem> =[
-        {   label: "sidebar_dashboard",
+        {   label: "Dashboard",
             link: "dashboard",
         },
-        {   label: "sidebar_image",
-            link: "top-1",
+        {   label: "Web Development",
+            link: "web-dev",
+            expand: true,
+            subItems: this.subItem1
         },
         {
-            label:"sidebar_book",
-            link:"top-2",
+            label:"Data Science",
+            link:"data-science",
+            expand: true,
+            subItems: this.subItem2
         },
-        {   label: "sidebar_other",
-            link: "other",
-            expand: false,
-            subItems: this.otherSubItem
+        {   label: "Tools & Resources",
+            link: "tools-resources",
+            expand: true,
+            subItems: this.subItem3
         }
     ];
 
@@ -53,7 +76,7 @@ export class SideBarComponent implements OnInit {
     onSelect(item:NavItem){
         this.selectedItem = item;
         this.selectedSubItem = null;
-        this.selectedItem.expand = !this.selectedItem.expand;
+        //this.selectedItem.expand = !this.selectedItem.expand;
     }
     onSubSelect(item:NavItem,subItem:SubItem){
         this.selectedSubItem = subItem;
