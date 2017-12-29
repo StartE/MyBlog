@@ -24,27 +24,32 @@ import { DotaService } from './../services/dota.service';
 import { MarkdownService } from './common/markdown/markdown.service';
 
 /** Component */
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { OtherComponent } from './other/other.component';
-import { ImageComponent } from './image/image.component';
-import { OtherSub1Component } from './other/other-sub1/other-sub1.component';
-import { OtherSub2Component } from './other/other-sub2/other-sub2.component';
 
 import { TitleBarComponent } from './title-bar/title-bar.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
-
 import { FootBarComponent } from './foot-bar/foot-bar.component';
-import { BookComponent } from './book/book.component';
-import { BooklistComponent } from './book/booklist/booklist.component';
-import { BookContentComponent } from './book/book-content/book-content.component';
 
 import { MainConsoleRouting } from './main-console.routing';
 import { MainConsoleComponent } from './main-console.component';
-
-import { OtherHomeComponent } from './other/other-home/other-home.component';
 import { CommonComponent } from './common/common.component';
 import { AbstractComponent } from './common/abstract/abstract.component';
 import { MarkdownComponent } from './common/markdown/markdown.component';
+
+import { Top0Component } from './content/top-0/top-0.component';
+import { Top1Component } from './content/top-1/top-1.component';
+import { Top2Component } from './content/top-2/top-2.component';
+import { Top3Component } from './content/top-3/top-3.component';
+import { Top1HomeComponent } from './content/top-1/top1-home/top1-home.component';
+import { Top1Sub1Component } from './content/top-1/top1-sub1/top1-sub1.component';
+import { Top1Sub2Component } from './content/top-1/top1-sub2/top1-sub2.component';
+import { Top2HomeComponent } from './content/top-2/top2-home/top2-home.component';
+import { Top2Sub1Component } from './content/top-2/top2-sub1/top2-sub1.component';
+import { Top2Sub2Component } from './content/top-2/top2-sub2/top2-sub2.component';
+import { Top2Sub3Component } from './content/top-2/top2-sub3/top2-sub3.component';
+import { Top3Sub1Component } from './content/top-3/top3-sub1/top3-sub1.component';
+import { Top3Sub2Component } from './content/top-3/top3-sub2/top3-sub2.component';
+import { Top3HomeComponent } from './content/top-3/top3-home/top3-home.component';
+import { ArticlesComponent } from './articles/articles.component';
 
 export function createTranslateHttpLoader(http: HttpClient){
     return new TranslateHttpLoader(http,'./assets/i18n/','.json');
@@ -86,21 +91,27 @@ export function createTranslateHttpLoader(http: HttpClient){
   ],
   declarations: [
     MainConsoleComponent,
-    DashboardComponent,
-    OtherComponent,
-    ImageComponent,
     TitleBarComponent,
     SideBarComponent,
     FootBarComponent,
-    BookComponent,
-    BooklistComponent,
-    BookContentComponent,
-    OtherSub1Component,
-    OtherSub2Component,
-    OtherHomeComponent,
     CommonComponent,
     AbstractComponent,
-    MarkdownComponent
+    MarkdownComponent,
+    Top1HomeComponent,
+    Top1Sub1Component,
+    Top1Sub2Component,
+    Top2HomeComponent,
+    Top2Sub1Component,
+    Top2Sub2Component,
+    Top2Sub3Component,
+    Top3Sub1Component,
+    Top3Sub2Component,
+    Top0Component,
+    Top3HomeComponent,
+    Top1Component,
+    Top2Component,
+    Top3Component,
+    ArticlesComponent
     ],
   providers:[
       DotaService,
