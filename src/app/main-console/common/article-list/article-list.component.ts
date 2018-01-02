@@ -13,7 +13,8 @@ export class ArticleListComponent implements OnInit {
     currentList:Article[] = [];
     currentPage:number = 0;
     constructor() { }
-
+    v1:number =4;
+    v2:number = 7;
     ngOnInit() {
         this.currentPage = 0;
         this.refreshArticleList();
