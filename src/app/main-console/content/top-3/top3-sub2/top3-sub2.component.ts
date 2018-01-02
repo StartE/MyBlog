@@ -10,7 +10,7 @@ export class Top3Sub2Component implements OnInit {
 
   articleList:Article[] = [];
   currentArticle:any;
-  itemsPerPage:number = 10;
+  itemsPerPage:number = 4;
   constructor() { }
   ngOnInit() {
 
