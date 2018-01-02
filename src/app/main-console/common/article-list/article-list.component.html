@@ -2,4 +2,6 @@
 <div *ngFor = "let article of currentList;let idx = index" >
   <app-article-item [article]="article" ></app-article-item>
 </div>
-<p-paginator [rows] = "itemsPerPage" [totalRecords] = "articleList.length" (onPageChange) = "onPageChange($event)"></p-paginator>
+<div class="paginator">
+    <p-paginator [rows] = "itemsPerPage" [totalRecords] = "articleList.length" (onPageChange) = "onPageChange($event)"></p-paginator>
+</div>
