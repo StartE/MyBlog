@@ -19,7 +19,7 @@ export class Top3Sub2Component implements OnInit {
 
   initList(){
       this.articleList=[
-          {id:1,name:'1hwdddddddddddddddddddddddsncjscsd',path:'tools-resources',subPath:'tools'},
+          {id:1,name:'1hwdddddddddddddddddddddddsncjscsd',path:'tools-resources',subPath:'tools',src:'./src/assets/file/html/test.html'},
           {id:2,name:'2hwdddddddddddddddddddddddsncjscsd',path:'tools-resources',subPath:'tools'},
           {id:3,name:'3hwdddddddddddddffddddddddddsncjscsd',path:'tools-resources',subPath:'tools'},
           {id:4,name:'4hwdddddddddddddddddddddddsncjscsd',path:'tools-resources',subPath:'tools'},

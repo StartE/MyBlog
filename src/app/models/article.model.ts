@@ -3,4 +3,5 @@ export class Article{
     name:string;
     path?:string;
     subPath?:string;
+    src?:string;
 }

@@ -114,7 +114,7 @@ export function createTranslateHttpLoader(http: HttpClient){
     Top3Component,
     ArticlesComponent,
     ArticleItemComponent,
-    ArticleListComponent
+    ArticleListComponent,
     ],
   providers:[
       DotaService,

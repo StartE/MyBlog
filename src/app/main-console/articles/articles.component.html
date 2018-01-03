@@ -1,3 +1,10 @@
-<p>
-  articles {{articleId}}works!
-</p>
+<article>  
+    <markdown *ngIf ="!!src" [src]="src"></markdown>
+    <div *ngIf = "src == undefined || src == null">
+        <div>404</div>
+        <br>
+        <div>Can't find this page.</div>
+    </div>
+</article>
+<div [routerLink] = "['/Blog/articles',previousArticle.path | json, previousArticle.subPath | json,previousArticle.id]"><span>Before</span></div>
+<div [routerLink] = "['/Blog/articles',nextArticle.path | json, nextArticle.subPath | json,nextArticle.id]"><span>After</span></div>

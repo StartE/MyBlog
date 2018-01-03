@@ -85,6 +85,9 @@ export class MarkdownComponent implements AfterViewInit {
             ? '```' + this.translateLanguage(extension) + '\n' + data + '\n```'
             : data;
             this.handleRaw(raw);
+        },
+        error =>{
+            window.alert(error)
         });
     }
     prepare(raw: string) {
