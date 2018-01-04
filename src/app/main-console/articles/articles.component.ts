@@ -19,6 +19,8 @@ export class ArticlesComponent implements OnInit,OnDestroy {
     src:string;
     constructor(private activatedRoute: ActivatedRoute) { 
         this.sub = this.activatedRoute.params.subscribe(params =>{
+            this.initArticle();
+            
             if(params['id'] != undefined){
                 this.articleId = parseInt(params['id']);
                 if(!!articleTable[this.articleId]){
@@ -36,6 +38,11 @@ export class ArticlesComponent implements OnInit,OnDestroy {
     }
     ngOnDestroy() {
         this.sub.unsubscribe();
+    }
+    initArticle() {
+        this.src = null;
+        this.previousArticle = null;
+        this.nextArticle = null;
     }
     getSiblings() {
         if(this.articleId > 0){

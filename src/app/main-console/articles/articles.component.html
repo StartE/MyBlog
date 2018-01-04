@@ -6,5 +6,5 @@
         <div>Can't find this page.</div>
     </div>
 </article>
-<div [routerLink] = "['/Blog/articles',previousArticle.path | json, previousArticle.subPath | json,previousArticle.id]"><span>Before</span></div>
-<div [routerLink] = "['/Blog/articles',nextArticle.path | json, nextArticle.subPath | json,nextArticle.id]"><span>After</span></div>
+<div *ngIf = "!!previousArticle" [routerLink] = "['/Blog/articles',previousArticle.path | json, previousArticle.subPath | json,previousArticle.id]"><span>Before</span></div>
+<div *ngIf = "!!nextArticle" [routerLink] = "['/Blog/articles',nextArticle.path | json, nextArticle.subPath | json,nextArticle.id]"><span>After</span></div>
