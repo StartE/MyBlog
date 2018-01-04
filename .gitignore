@@ -3,3 +3,4 @@ settings.json
 node_modules/.bin
 src/app/main-console/npm-debug.log
 .gitignore
+dist/
